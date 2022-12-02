@@ -1,0 +1,15 @@
+ccn copy url ftp://172.20.49.175/h2022.wav prompt h2022.wav username anonymous password anonymous
+
+
+ccn copy url ftp://172.20.48.160/h2022.wav prompt h2022.wav username anonymous password anonymous
+
+Download
+ccn copy prompt prompt-filename url ftp: // destination-ip-addres s / prompt-filename [ language xx_YY ] [ username name password password ]
+
+se-10-0-0-0# ccn copy prompt AAprompt2.wav url ftp://10.100.10.123/AAprompt2.wav
+
+Upload
+ccn copy url source-ip-address prompt prompt-filename
+
+se-10-0-0-0# ccn copy url ftp://10.100.10.123/AAprompt1.wav prompt AAprompt1.wav
+se-10-0-0-0# ccn copy url http://www.server.com/AAgreeting.wav prompt AAgreeting.wav
